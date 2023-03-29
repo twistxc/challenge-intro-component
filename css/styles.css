@@ -1,0 +1,65 @@
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  background-size: cover;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.text {
+  max-width: 500px;
+  color: #fff;
+}
+.text h1 {
+  font-size: 49px;
+}
+
+.container {
+  padding-left: 80px;
+}
+
+.subscription {
+  width: 500px;
+  height: 50px;
+  background-color: hsl(248, 32%, 49%);
+  border: 1px solid hsl(248, 32%, 49%);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 200;
+}
+.subscription_bold {
+  font-weight: 500;
+}
+.subscription a {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.signup {
+  margin-top: 25px;
+  width: 500px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
