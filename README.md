@@ -42,7 +42,6 @@ Users should be able to:
 - BEM
 - SASS/SCSS
 - Flexbox
-- Mobile-first workflow
 
 ### What I learned
 

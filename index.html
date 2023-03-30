@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -41,7 +41,57 @@
             <p>then $20/mo. thereafter</p></a
           >
         </div>
-        <div class="signup"></div>
+        <div class="signup-box">
+          <form class="signup-form" id="signup-form">
+            <div class="input-group">
+              <input
+                type="text"
+                id="firstName"
+                class="signup-input"
+                placeholder="First Name"
+              />
+              <img src="images/icon-error.svg" alt="error" />
+              <p>First Name cannot be empty</p>
+            </div>
+            <div class="input-group">
+              <input
+                type="text"
+                id="lastName"
+                class="signup-input"
+                placeholder="Last Name"
+              />
+              <img src="images/icon-error.svg" alt="error" />
+              <p>Last Name cannot be empty</p>
+            </div>
+            <div class="input-group">
+              <input
+                type="text"
+                id="emailAddress"
+                class="signup-input"
+                placeholder="Email Address"
+              />
+              <img src="images/icon-error.svg" alt="error" />
+              <p>Looks like this is not an email</p>
+            </div>
+            <div class="input-group">
+              <input
+                type="text"
+                id="password"
+                class="signup-input"
+                placeholder="Password"
+              />
+              <img src="images/icon-error.svg" alt="error" />
+              <p>Password cannot be empty</p>
+            </div>
+            <button type="submit" class="signup-input btn">
+              Claim your free trial
+            </button>
+          </form>
+          <div class="signup-text">
+            <p>By clicking the button you are agreeing to our&nbsp;</p>
+            <a href="#">Terms and Services</a>
+          </div>
+        </div>
       </div>
     </div>
     <footer>
@@ -52,5 +102,6 @@
         >. Coded by <a href="#">twist</a>.
       </p>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>

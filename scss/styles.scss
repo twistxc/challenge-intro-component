@@ -15,11 +15,12 @@ body {
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
   padding: 0 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
 }
 
 .text {
@@ -35,15 +36,17 @@ body {
 }
 
 .subscription {
+  padding-top: 8px;
   width: 500px;
-  height: 50px;
+  height: 55px;
   background-color: $blue;
   border: 1px solid $blue;
   border-radius: 10px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.2);
   font-size: 15px;
-  font-weight: 200;
+  font-weight: 300;
   &_bold {
-    font-weight: 500;
+    font-weight: 600;
   }
   & a {
     display: flex;
@@ -54,12 +57,105 @@ body {
 }
 
 .signup {
-  margin-top: 25px;
-  width: 500px;
-  height: 400px;
-  background-color: #fff;
-  border: 1px solid#fff;
-  border-radius: 10px;
+  &-box {
+    margin: auto;
+    margin-top: 25px;
+    width: 500px;
+    height: 550px;
+    background-color: #fff;
+    border: 1px solid#fff;
+    border-radius: 10px;
+    box-shadow: 0 8px rgba(0, 0, 0, 0.2);
+  }
+  &-form {
+    margin-top: 20px;
+  }
+  &-input {
+    margin-top: 10px;
+    padding-left: 30px;
+    width: 400px;
+    height: 50px;
+    border: 1px solid rgba($color: $grayishblue, $alpha: 0.6);
+    border-radius: 5px;
+    font-weight: 600;
+    color: $darkblue;
+    font-size: 16px;
+    &::placeholder {
+      color: $darkblue;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid $darkblue;
+    }
+  }
+  &-text {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 11px;
+    color: $grayishblue;
+    & a {
+      font-weight: 700;
+      color: $red;
+      text-decoration: none;
+    }
+  }
+}
+.input-group {
+  margin-right: 5px;
+  color: $red;
+  text-align: right;
+  font-weight: 500;
+  font-size: 11px;
+  font-style: italic;
+  & img {
+    position: relative;
+    right: 50px;
+    top: 5px;
+    visibility: hidden;
+  }
+  & p {
+    margin-right: 30px;
+    visibility: hidden;
+  }
+}
+.error {
+  & input {
+    border: 2px solid $red;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+  & img {
+    visibility: visible;
+  }
+  & p {
+    visibility: visible;
+  }
+  &:focus {
+    visibility: hidden;
+  }
+}
+.btn {
+  margin-left: 34px;
+  padding-top: 5px;
+  width: 435px;
+  height: 50px;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: $green;
+  font-weight: 500;
+  color: #fff;
+  border: 1px solid $green;
+  box-shadow: 0 3px rgba(13, 119, 73, 0.7);
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .attribution {
